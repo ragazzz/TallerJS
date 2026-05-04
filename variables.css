@@ -1,0 +1,14 @@
+:root {
+  --lime:   #C8F500;
+  --navy:   #060D1F;
+  --dark:   #0B1529;
+  --card:   #111C33;
+  --mid:    #1A2845;
+  --error:  #FF4D4D;
+  --success:#00E87A;
+  --radius: 14px;
+  --ff-head: 'Bebas Neue', sans-serif;
+  --ff-cond: 'Barlow Condensed', sans-serif;
+  --ff-body: 'Barlow', sans-serif;
+  --transition: 0.28s cubic-bezier(.4,0,.2,1);
+}
