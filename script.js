@@ -78,23 +78,12 @@ function validateField(id) {
   });
 });
 
-/* ── Terms checkbox ── */
-document.getElementById('termCheck').addEventListener('click', function () {
-  this.classList.toggle('checked');
-});
-
 /* ── Form submit ── */
 document.getElementById('regForm').addEventListener('submit', function (e) {
   e.preventDefault();
 
   const fields  = ['nombre', 'apellido', 'email', 'telefono', 'pass', 'passConf'];
   const allOk   = fields.map(validateField).every(Boolean);
-  const terms   = document.getElementById('termCheck').classList.contains('checked');
-
-  if (!terms) {
-    alert('Debes aceptar los términos y condiciones.');
-    return;
-  }
 
   if (allOk) {
     document.getElementById('successOverlay').classList.add('show');
